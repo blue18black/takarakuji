@@ -1,0 +1,20 @@
+[project]
+name = "loto7"
+version = "0.1.0"
+description = "ロト7 データ分析: 予測バックテストと被りにくい組み合わせの生成"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "requests",
+    "torch",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
